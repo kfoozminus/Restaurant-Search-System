@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Restaurant</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="prelink">http://10.0.3.2/</string>
+</resources>

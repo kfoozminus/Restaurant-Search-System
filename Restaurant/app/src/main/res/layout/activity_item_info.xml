@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_item_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.root.restaurant.ItemInfo">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_light_normal"
+        android:id="@+id/itemImage" />
+
+    <Button
+        android:text="Minus"
+        android:id="@+id/minBut"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/quanEdit"
+        android:layout_alignParentStart="true"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:onClick="onMinus" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemPrice"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/itemRating"
+        android:layout_alignStart="@+id/itemRating" />
+
+    <Button
+        android:text="Add To Basket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button6"
+        android:textAlignment="center"
+        android:onClick="addToBasket" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemRating"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/quanEdit"
+        android:layout_width="200dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/pluBut"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Plus"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:id="@+id/pluBut"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:onClick="onPlus"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/button6"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
